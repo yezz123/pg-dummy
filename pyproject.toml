@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pg-dummy"
+description = 'simple Script Help to insert Some Dummy Data to Populate Database For Testing'
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+keywords = [
+  "postgresql",
+  "dummy",
+  "data",
+  "populate",
+  "testing",
+]
+authors = [
+  { name = "Yasser Tahiri", email = "hello@yezz.me" },
+]
+classifiers = [
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+]
+dependencies = [
+  "psycopg2-binary",
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://github.com/yezz123/pg-dummy#readme"
+Issues = "https://github.com/yezz123/pg-dummy/issues"
+Source = "https://github.com/yezz123/pg-dummy"
+
+[project.optional-dependencies]
+lint = [
+    "pre-commit==2.20.0",
+]
+
+[tool.hatch.version]
+path = "pg_dummy.py"
