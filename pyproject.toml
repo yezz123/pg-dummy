@@ -39,7 +39,7 @@ Source = "https://github.com/yezz123/pg-dummy"
 
 [project.optional-dependencies]
 lint = [
-    "pre-commit==2.21.0",
+    "pre-commit==3.3.1",
 ]
 
 [tool.hatch.version]
